@@ -1,0 +1,10 @@
+.nav-link{
+    padding: 0 10px;
+    color: blue;
+}
+.navbar-brand{
+    padding-left: 15px;
+}
+.navbar-brand:hover{
+    font-weight: bolder;
+}

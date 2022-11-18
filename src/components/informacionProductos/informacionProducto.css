@@ -1,0 +1,26 @@
+.card {
+    width: 180px;
+    min-height: 150px;
+    border: solid 1px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.card img {
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card ul {
+    padding: 5px 15px;
+
+}
+.bold{
+    font-weight: 600;
+}
+.card ul li {
+    list-style: none;
+    border-bottom: solid 1px;
+    padding: 10px 0;
+}
