@@ -7,7 +7,7 @@ import './navegacion.css'
 
 function NavList() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <LinkContainer to="/">
         <Navbar.Brand>Mi Portfolio</Navbar.Brand>
       </LinkContainer>
@@ -19,6 +19,9 @@ function NavList() {
         </LinkContainer>
         <LinkContainer to="/productos">
           <Nav.Link>Listado de Productos</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/todo">
+          <Nav.Link>Todo</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/buscador">
           <Nav.Link>Buscador de Peliculas</Nav.Link>

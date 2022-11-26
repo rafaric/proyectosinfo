@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tarea {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+    padding: 3px;
+    border-bottom: 1px solid black !important;
+}
+.tarea.completada{
+    text-decoration:line-through;
+    font-style:italic;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    border: none;    
+    border-radius: 5px;
+    background-color: #6495ed;
+    padding: 4px;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+button:last-child{
+    background-color: rgba(255, 0, 0, 0.514);
+}
+.buttoncontainer {
+    display: flex;
+    gap: 5px;
+
+}
+.formupdate{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    
+    border: 1px solid gray;
+    background-color: rgba(250, 250, 256, 0.5);
+    border-radius: 4px;
+}
+.tareaedit{
+    border: none;
+    border-radius: 3px;
+    margin: 0;
+    outline: none;
+    padding: 3px;
+    width: fit-content;
+}

@@ -3,15 +3,18 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from "react";
-import { Box, ThemeProvider, createTheme } from '@mui/system';
 
 const Buscador = ({ onBuscar }) => {
   const [criterioBusqueda, setCriterioBusqueda] = useState('');
-
+  
   return (
     <Paper
       component="form"
       sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, marginTop:10 }}
+      onSubmit={(e) => {
+          e.preventDefault();
+          onBuscar(criterioBusqueda);
+        }}
     >
       <InputBase
         sx={{ ml: 1, flex: 1 }}

@@ -1,11 +1,20 @@
 import { Pagination } from "@mui/material"
-import { Box, ThemeProvider, createTheme } from '@mui/system';
 
 const Paginador = ({
     cantidadPaginas,
     onChange
 }) => {
-    return <Pagination count={cantidadPaginas} color="secondary" onClick={() => onChange(cantidadPaginas+1)}/>
+    const cambiaPagina = (_evento,pagina) =>{
+        onChange(pagina);
+    };
+    
+    return (
+        <Pagination 
+            count={cantidadPaginas} 
+            color="secondary" 
+            onChange={cambiaPagina}
+        />
+        );
 }
 
 export default Paginador;

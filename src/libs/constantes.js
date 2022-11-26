@@ -1,3 +1,4 @@
-export const DEFAULT_IMAGE = './images/noencontrado.png';
+
+export const DEFAULT_IMAGE = './not-found.png';
 export const NA = 'N/A';
 

@@ -1,10 +1,24 @@
 .nav-link{
     padding: 0 10px;
-    color: blue;
+    border-bottom: 2px solid #5c698b00;
+    color: white !important;
 }
+.nav-link:hover{
+    color: #5c698b !important;
+    background-color: aliceblue;
+    border-bottom: 2px solid #5c698b;
+    transition: all 0.8s ease 0.2s;
+}
+
+
 .navbar-brand{
     padding-left: 15px;
+    color: white !important;
 }
 .navbar-brand:hover{
     font-weight: bolder;
+}
+#root > div > nav{
+    background-color: rgb(0, 0, 0,0.3);
+    color: white;
 }
