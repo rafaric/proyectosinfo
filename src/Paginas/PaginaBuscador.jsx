@@ -42,8 +42,8 @@ const PaginaBuscador = () => {
     return (
         <>
         <NavList />
-        <Container maxWidth='sm'>
-            <Buscador onBuscar={onBuscar}/>
+        <Container sx={{display:'flex', flexDirection: 'column',alignItems:'center'}}>
+            <Buscador onBuscar={onBuscar} />
             { isLoading && <Loading /> }
             { peliculas && <ListaPeliculas peliculas={peliculas}/> }
             { peliculas && <Paginador cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }

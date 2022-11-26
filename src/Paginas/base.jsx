@@ -3,6 +3,8 @@ import './base.css'
 import NavList from './navegacion';
 import { useState, useEffect } from 'react'
 import { getWeather } from '../servicios/weather';
+import WeatherMainInfo from '../components/weather/WeatherMainInfo';
+import Loading from '../components/Loading/Loading';
 
 function Base(props) {
     const [clima, setClima] = useState(null);
@@ -13,10 +15,8 @@ function Base(props) {
     }, []);
 
     async function loadingInfo(ciudad='Cordoba') {
-        console.log('estoy ak');
         try {
             const respuesta = await getWeather(ciudad);
-            console.log(respuesta.data[0].app_temp);
             setClima(respuesta);
         } catch (error) {
             console.log(error)
@@ -33,8 +33,12 @@ function Base(props) {
         <>
             <NavList />
             <h1>BIENVENIDOS A MI PORTFOLIO</h1>
-            <Weather onChangeCiudad={handleChangeCity}/>
-            <div>{clima?.data[0].app_temp}</div>
+            <div className='weatherContainer'>
+                
+                <Weather onChangeCiudad={handleChangeCity}/>
+                {clima ? <WeatherMainInfo clima={clima}/> : <Loading className='loader'/>}
+                
+            </div>
         </>
     );
     

@@ -5,6 +5,7 @@ import Loading from "../components/Loading/Loading";
 import Pelicula from "../components/Peliculas/Pelicula";
 import { getPelicula } from "../servicios/peliculas";
 import { useParams } from "react-router-dom";
+import NavList from './navegacion';
 
 const PaginaDetalle = () => {
     const [pelicula, setPelicula] = useState();
@@ -26,7 +27,8 @@ const PaginaDetalle = () => {
 
     if ((pelicula && pelicula.Error) || !pelicula) {
         return (
-            <Container maxWidth='sm'>
+            <Container maxWidth='sm' sx={{ display:'flex', justifyContent:'center' }}>
+                <NavList />
                 La pelicula no se encontro {id}
             </Container>
         )
@@ -37,9 +39,12 @@ const PaginaDetalle = () => {
     }
 
     return (
-        <Container maxWidth='sm'>
+        <>
+        <NavList />
+        <Container maxWidth='sm' sx={{ display:'flex', justifyContent:'center' }}>
             <Pelicula pelicula={pelicula}/>
         </Container>
+        </>
     )
 }
 

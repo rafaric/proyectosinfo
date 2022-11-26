@@ -11,3 +11,8 @@ h1{
     font-size: 3rem !important;
     
 }
+.weatherContainer{
+    width: 500px;
+    height: 500px;
+    margin: 150px auto;
+}

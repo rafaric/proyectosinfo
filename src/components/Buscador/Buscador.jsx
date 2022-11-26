@@ -10,7 +10,7 @@ const Buscador = ({ onBuscar }) => {
   return (
     <Paper
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, marginTop:10 }}
+      sx={{ display: 'flex', justifyContent: 'center', width:450, marginTop:10 }}
       onSubmit={(e) => {
           e.preventDefault();
           onBuscar(criterioBusqueda);

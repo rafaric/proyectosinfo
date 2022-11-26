@@ -17,12 +17,12 @@ const Pelicula = ({
     };
 
     return (
-      <Card sx={{ maxWidth: 250, marginBottom: 10 }}>
+      <Card sx={{ maxWidth: 250, marginBottom: 10, marginTop: 10 }}>
         <CardActionArea onClick = {onCardClick}>
           <CardMedia
             component="img"
             height="140"
-            width={250}
+            
             image={pelicula.Poster  === NA ? DEFAULT_IMAGE : pelicula.Poster}
             alt={pelicula.Title}
           />
