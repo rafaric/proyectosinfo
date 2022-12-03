@@ -14,7 +14,7 @@ function Base(props) {
         
     }, []);
 
-    async function loadingInfo(ciudad='Cordoba') {
+    async function loadingInfo(ciudad='Resistencia') {
         try {
             const respuesta = await getWeather(ciudad);
             setClima(respuesta);
@@ -33,6 +33,10 @@ function Base(props) {
         <>
             <NavList />
             <h1>BIENVENIDOS A MI PORTFOLIO</h1>
+            <div>
+                <div className="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="rafael-strongoli" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/rafael-strongoli?trk=profile-badge">Rafael Strongoli</a>
+                </div>
+            </div>
             <div className='weatherContainer'>
                 
                 <Weather onChangeCiudad={handleChangeCity}/>

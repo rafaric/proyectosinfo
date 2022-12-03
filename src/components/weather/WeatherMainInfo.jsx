@@ -20,10 +20,10 @@ const WeatherMainInfo = ({clima}) => {
                     width="100%" 
                     height="450" 
                     style={{"border":0}} 
-                    allowfullscreen="" 
+                    allowFullScreen="" 
                     loading="lazy" 
                     title='mapa'
-                    referrerpolicy="no-referrer-when-downgrade">
+                    referrerPolicy="no-referrer-when-downgrade">
                     
                 </iframe>
                
