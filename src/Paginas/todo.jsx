@@ -23,10 +23,15 @@ const Todo = () => {
         titulo: titulo,
         completed: false
       };
-      const temp = [...tareas];
-      temp.unshift(nuevaTarea)
-      setTareas(temp);
-      setTitulo('');
+      if(nuevaTarea.titulo !== ""){
+        const temp = [...tareas];
+        temp.unshift(nuevaTarea);
+        setTareas(temp);
+        setTitulo('');
+      }else{
+        alert("No ha escrito ninguna tarea.")
+      }
+      
     }
 
     function handleUpdate(id, nuevoTitulo) {

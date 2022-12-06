@@ -1,10 +1,12 @@
 import React from 'react';
 import './WeatherMainInfo.css';
-const WeatherMainInfo = ({clima}) => {
+const WeatherMainInfo = ({activado, clima}) => {
     
     return (
-        <div className='mainInfo'>
+        <div >
+            
             <div className='city'>{clima?.name}</div>
+            <div className='mainInfo'>
             <div className='row'>
                 <div >
                     <img src={`http://openweathermap.org/img/wn/${clima?.weather[0].icon}@2x.png`} alt='icono'/>                    
@@ -17,16 +19,17 @@ const WeatherMainInfo = ({clima}) => {
             
                 <iframe 
                     src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56647.25776835287!2d${clima?.coord.lon}!3d${clima?.coord.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1669428080886!5m2!1ses-419!2sar`} 
-                    width="100%" 
-                    height="450" 
+                    width="50%" 
+                    height="80" 
                     style={{"border":0}} 
                     allowFullScreen="" 
                     loading="lazy" 
+                    className="mapa"
                     title='mapa'
                     referrerPolicy="no-referrer-when-downgrade">
                     
                 </iframe>
-               
+                </div>
         </div>
     );
 }

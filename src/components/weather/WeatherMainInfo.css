@@ -1,26 +1,35 @@
 .mainInfo{
     background-color: white;
-    padding: 40px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .city{
-    font-size: 32px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font-size: 30px;
     text-align: center;
     font-weight: bolder;
 }
 .row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: flex-start;
+    width:30%;
+    margin: 0 !important;
 }
-
 .condition{
-    font-size: 24px;
+    font-size: 12px;
 }
 .current{
-    font-size: 38px;
+    font-size: 20px;
     font-weight: bold;
+}
+.weatherConditions{
+    padding-left: 200px;
 }

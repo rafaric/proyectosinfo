@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import './weather.css'
 
-export default function WeatherForm({onChangeCiudad}) {
+export default function WeatherForm({ onChangeCiudad}) {
   const [ciudad, setCiudad] = useState('');
 
   function onChange(e) {
@@ -20,7 +20,8 @@ export default function WeatherForm({onChangeCiudad}) {
 
   return (
     <form onSubmit={handleSubmit} className="container">
-      <input className='input' type='text' onChange={onChange}/>
+      <label className='label' htmlFor='ciudad'>Ingrese Ciudad:</label>
+      <input className='input' id='ciudad' type='text' onChange={onChange}/>
     </form>
     
   )
