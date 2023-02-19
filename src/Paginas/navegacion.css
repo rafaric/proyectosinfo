@@ -1,21 +1,24 @@
 .nav-link{
     padding: 0 10px;
     border-bottom: 2px solid #5c698b00;
-    color: #ABC4FF !important;
+    color: #37383b !important;
     font-family: 'big_john_proregular';
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
 }
 .nav-link:hover{
     color: #5c698b !important;
     background-color: aliceblue;
     border-bottom: 2px solid #5c698b;
-    transition: all 0.8s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
 }
 
 
 .navbar-brand{
     padding-left: 15px;
-    color: #ABC4FF !important;
+    color: #09225a !important;
     font-family: 'big_john_probold';
+    font-size: 1.6rem !;
 }
 .navbar-brand:hover{
     font-weight: bolder;
@@ -23,4 +26,21 @@
 #root > div > nav{
     background-color: #E2EAFC;
     color: #ABC4FF;
+}
+.navbar .navbar-expand-lg .navbar-light{
+    display: flex;
+    justify-content: space-between !important;
+}
+.menu-container{
+    display: flex;
+}
+.menu-redes{
+    padding-right: 20px;
+    
+}
+.menu-redes ul{
+    list-style: none;
+    display: flex;
+    gap: 13px;
+    align-items: center;
 }

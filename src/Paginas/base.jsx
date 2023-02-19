@@ -65,13 +65,13 @@ function Base(props) {
                     </a>
                 </div>
         {/* Widget del Clima */}
-        <div className="weatherContainer">
+        {/* <div className="weatherContainer">
         
             <Weather  onChangeCiudad={handleChangeCity}/>
             
             {clima ? <Newweathermain clima={clima}/> : <Loading className='loader'/>}
         
-        </div>
+        </div> */}
 
         </div>
             
