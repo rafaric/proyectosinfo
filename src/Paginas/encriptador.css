@@ -1,0 +1,20 @@
+.encriptador-imagen{
+    width: 50vw;
+    height: 50vh;
+}
+.contenedor-pagina{
+    display: flex;
+
+    margin: 3rem 1rem;
+}
+.contenedor-pagina p{
+    padding: 0 3rem;
+    font-size: large;
+
+}
+.contenedor-pagina-descripcion{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}

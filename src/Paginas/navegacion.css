@@ -27,20 +27,31 @@
     background-color: #E2EAFC;
     color: #ABC4FF;
 }
-.navbar .navbar-expand-lg .navbar-light{
+.navbar-expand-lg {
     display: flex;
     justify-content: space-between !important;
+    align-items: center !important;
 }
 .menu-container{
     display: flex;
 }
 .menu-redes{
     padding-right: 20px;
+    align-items: center;
     
 }
 .menu-redes ul{
     list-style: none;
     display: flex;
-    gap: 13px;
+    gap: 3rem;
     align-items: center;
+    margin-bottom: 0;
+}
+.redes{
+    width: 40px;
+    height: auto;
+}
+.redes:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }

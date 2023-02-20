@@ -7,6 +7,7 @@ import insta from "../img/icons/instagram.png"
 import git from "../img/icons/github.png"
 import lin from "../img/icons/linkedin.png"
 
+
 function NavList() {
   return (
     <Navbar expand="lg">
@@ -29,14 +30,27 @@ function NavList() {
           <LinkContainer to="/buscador">
             <Nav.Link>Buscador de Peliculas</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/encriptador">
+            <Nav.Link>Encriptador de texto</Nav.Link>
+          </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </div>
       <div className="menu-redes">
-        <ul>
-          <li><img src={insta} alt="instagram" /></li>
-          <li><img src={git} alt="instagram" /></li>
-          <li><img src={lin} alt="instagram" /></li>
+        <ul className="menu-redes-lista">
+          <li>
+
+            <a href="https://www.instagram.com/rafaric81" target="_blank">
+            <img className="redes" src={insta} alt="instagram" />
+              </a></li>
+          <li>
+            <a href="https://github.com/rafaric">
+            <img className="redes" src={git} alt="github" target="_blank"/>
+              </a></li>
+          <li>
+            <a href="https://linkedin.com/in/rafaelstongoli"target="_blank">
+            <img className="redes" src={lin} alt="linkedin" />
+              </a></li>
         </ul>
       </div>
     </Navbar>

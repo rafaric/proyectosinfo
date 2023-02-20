@@ -9,9 +9,9 @@ const InformacionEquipo = ({
     return (
         <section className='informacion-equipo'>
             <ul>
-                <li> Ciudad: {ciudad}</li>
-                <li> Base Secreta: {baseSecreta}</li>
-                <li> Año de Formacion: {anioFormacion}</li>
+                <li><strong>Ciudad: </strong> {ciudad}</li>
+                <li><strong>Base Secreta: </strong>  {baseSecreta}</li>
+                <li><strong>Año de Formación: </strong>  {anioFormacion}</li>
             </ul>
         </section>
     ); 

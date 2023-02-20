@@ -10,6 +10,7 @@ import Productos from './Paginas/Productos'
 import PaginaBuscador from './Paginas/PaginaBuscador'
 import Todo from './Paginas/todo'
 import PaginaDetalle from './Paginas/PaginaDetalle'
+import Encriptador from "./Paginas/encriptador";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/buscador/:id",
     element:<PaginaDetalle />,
+  },
+  {
+    path: "/encriptador",
+    element: <Encriptador />,
   },
   ]);
 

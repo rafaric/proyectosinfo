@@ -1,5 +1,6 @@
+import noimagen from "../../img/icons/no-image.png"
 const ImagenSuperHeroe = () => {
-    return <img src="./assets/img/test-image.jpg" alt="test" />
+    return <img src={noimagen} alt="test" />
 }
 
 export default ImagenSuperHeroe;

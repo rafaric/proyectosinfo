@@ -5,17 +5,24 @@
 }
 
 .informacion-super-heroe {
-    width: 150px;
+    flex: 1;
+    overflow: auto;
     border: solid 1px;
     margin: 20px;
+    border-radius: 5px;
 }
 
 .informacion-super-heroe img {
-    height: 100px;
+    height: 200px;
     width: 100%;
+    padding: 0.5rem;
 }
 
-.informacion-super-heroe ul {
-    padding: 5px;
+.info {
+    padding: 0.8rem;
+    list-style: none;
 }
-
+.poderes{
+    padding-left: 4rem;
+    
+}
