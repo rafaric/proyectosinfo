@@ -38,7 +38,11 @@ function Base(props) {
     setClima(null);
     loadingInfo(ciudad);
   }
-
+  function showTecno() {
+    const tecno = document.getElementsByClassName("proyectos__card-tecno-img");
+    console.log(tecno);
+    tecno.classList.toggle("visible");
+  }
   return (
     <>
       <NavList />
@@ -197,7 +201,13 @@ function Base(props) {
         <h2>Otros Proyectos</h2>
         <div className="proyectos__card-container">
           <div className="proyectos__card">
-            <img src="../img/Screenshot.png" alt="" />
+            <img
+              className="proyectos__card-img"
+              src="images/Screenshot.png"
+              alt="frutayfruto"
+              onMouseEnter={showTecno}
+            />
+            <img src={html5} alt="" className="proyectos__card-tecno-img" />
           </div>
         </div>
       </section>
