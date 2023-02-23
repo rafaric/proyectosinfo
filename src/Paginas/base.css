@@ -3,12 +3,16 @@
   margin-top: 50px;
   margin-left: 10px;
 }
-h1 {
+.header > h1 {
   text-align: center;
-  color: whitesmoke !important;
-  font-family: "big_john_proregular, roboto";
-  font-size: 4rem !important;
+  color: #65C9FF;
+  font-family: "Helvetica Neue";
+  font-size: 4rem;
+  font-weight: 700;
+  -webkit-text-stroke: 2px black;
+  
 }
+
 .desc {
   margin: -100px 120px;
   padding-left: 190px;
@@ -30,25 +34,58 @@ h1 {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 3rem;
 }
 .avatar {
   margin-top: 8rem;
 }
-.contacto {
-  background-color: #b6ccfe;
-  color: #333;
-  padding: 2rem 4rem;
-  border: 1px solid #333;
-  border-radius: 15px;
-  align-self: center;
-  margin: 400px 0 0 600px;
+.bn39 {
+  margin-left: 50vw;
+  margin-top: 8rem;
+  translate: -3.5em;
+  background-image: linear-gradient(135deg, #008aff, #3f56a0);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+}
+
+.bn39:hover {
+  color: #fff;
+}
+
+.bn39 .bn39span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn39:hover .bn39span {
+  background: transparent;
+}
+.proyectos__card-container{
+  display: flex;
 }
 .proyectos__card {
-  width: 500px;
+  width: 400px;
   position: relative;
+  margin: 2rem;
 }
 .proyectos__card-img {
-  width: 500px;
+  width: 400px;
   height: 200px;
   cursor: pointer;
   border-radius: 10px;
@@ -57,16 +94,18 @@ h1 {
   opacity: 0.8;
 }
 .proyectos__card-tecno-img {
-  width: 40px;
+  display: flex;
+  width: 80px;
   height: 40px;
   position: absolute;
-  bottom: 0px;
-  visibility: hidden;
-  right: 0px;
+  bottom: 1px;
+  /* visibility: hidden; */
+  right: 40px;
 }
-.proyectos__card-tecno-img.visible {
-  visibility: visible;
+.proyectos__card-tecno-img > img{
+  height: 40px;
 }
+
 .weatherContainer {
   display: flex;
   flex-wrap: wrap;
@@ -171,4 +210,33 @@ h1 {
   font-size: 1.2rem;
   font-weight: 500;
   color: aliceblue;
+}
+.softSkills{
+  margin: 3rem 0;
+}
+.educacion-container{
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.informa{
+  width: 20em;
+  
+}
+.codoacodo{
+  width: 20em;
+  height: 180px;
+  padding: 0 50px;
+  
+}
+.alura{
+  background-color: #051D3B;
+  width: 20em;
+  height: 180px;
+  padding: 1em;
+  
 }
