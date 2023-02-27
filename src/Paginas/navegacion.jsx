@@ -16,7 +16,7 @@ function NavList() {
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="">
             <LinkContainer to="/superheroes">
               <Nav.Link>Listado de SuperHeroes</Nav.Link>
             </LinkContainer>
@@ -38,17 +38,34 @@ function NavList() {
       <div className="menu-redes">
         <ul className="menu-redes-lista">
           <li>
-            <a href="https://www.instagram.com/rafaric81" target="_blank">
+            <a href="/">
+              <img className="redes-home" src="images/home.png" alt="home" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/rafaric81"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="redes" src={insta} alt="instagram" />
             </a>
           </li>
           <li>
-            <a href="https://github.com/rafaric">
-              <img className="redes" src={git} alt="github" target="_blank" />
+            <a
+              href="https://github.com/rafaric"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="redes" src={git} alt="github" />
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/rafaelstongoli" target="_blank">
+            <a
+              href="https://linkedin.com/in/rafaelstongoli"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="redes" src={lin} alt="linkedin" />
             </a>
           </li>

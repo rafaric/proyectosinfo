@@ -1,57 +1,92 @@
-.nav-link{
-    padding: 0 10px;
-    border-bottom: 2px solid #5c698b00;
-    color: #37383b !important;
-    font-family: 'big_john_proregular';
-    font-weight: 700 !important;
-    font-size: 1.2rem !important;
+.nav-link {
+  padding: 0 10px;
+  border-bottom: 2px solid #5c698b00;
+  color: #37383b !important;
+  font-family: "big_john_proregular";
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
 }
-.nav-link:hover{
-    color: #5c698b !important;
-    background-color: aliceblue;
-    border-bottom: 2px solid #5c698b;
-    transition: all 0.5s ease 0.2s;
+.nav-link:hover {
+  color: #5c698b !important;
+  background-color: aliceblue;
+  border-bottom: 2px solid #5c698b;
+  transition: all 0.5s ease 0.2s;
 }
 
-
-.navbar-brand{
-    padding-left: 15px;
-    color: #09225a !important;
-    font-family: 'big_john_probold';
-    font-size: 1.6rem !;
+.navbar-brand {
+  padding-left: 15px;
+  color: #09225a !important;
+  font-family: "big_john_probold";
+  font-size: 1.6rem !;
 }
-.navbar-brand:hover{
-    font-weight: bolder;
+.navbar-brand:hover {
+  font-weight: bolder;
 }
-#root > div > nav{
-    background-color: #E2EAFC;
-    color: #ABC4FF;
+#root > div > nav {
+  background-color: #e2eafc;
+  color: #abc4ff;
 }
 .navbar-expand-lg {
-    display: flex;
-    justify-content: space-between !important;
-    align-items: center !important;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
-.menu-container{
-    display: flex;
+.menu-container {
+  display: flex;
 }
-.menu-redes{
-    padding-right: 20px;
-    align-items: center;
-    
+.menu-redes {
+  padding-right: 20px;
+  align-items: center;
 }
-.menu-redes ul{
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 0;
+.menu-redes ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 0;
 }
-.redes{
+.redes {
+  width: 40px;
+  height: auto;
+}
+.redes-home {
+  display: none;
+}
+.redes:hover,
+.redes-home:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s linear;
+}
+@media screen and (max-width: 375px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-nav {
+    padding-left: 1rem !important;
+  }
+  .navbar-toggler {
+    height: 40px !important;
+  }
+  .navbar-collapse.collapse.show {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 1px;
+    background-color: #e2eafc;
+  }
+  .collapsing {
+    height: 0 !important;
+    overflow: visible !important;
+    transition: none !important;
+  }
+  .menu-redes ul {
+    gap: 2rem;
+  }
+  .redes-home {
+    display: block;
     width: 40px;
-    height: auto;
-}
-.redes:hover{
-    opacity: 0.5;
-    cursor: pointer;
+    height: 40px;
+  }
 }
