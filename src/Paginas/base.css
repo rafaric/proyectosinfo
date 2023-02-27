@@ -235,6 +235,27 @@
 }
 .softSkills {
   margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+.softSkills > h2 {
+  text-transform: uppercase;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-card > span {
+  font-size: x-large;
 }
 .educacion {
   margin: 3rem 0;
@@ -286,7 +307,7 @@
   margin: 2rem 0;
   align-self: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .header {
     flex-direction: column;
     background-size: contain;
@@ -307,6 +328,7 @@
     padding: 0.8rem 1.2rem;
     line-height: 2rem;
   }
+
   .otros-proyectos {
     width: 90vw;
     margin: 0 auto;

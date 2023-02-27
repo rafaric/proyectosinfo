@@ -59,7 +59,7 @@
   transform: scale(1.2);
   transition: transform 0.3s linear;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .navbar-brand {
     display: none;
   }
