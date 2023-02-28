@@ -1,46 +1,46 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.todoContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    min-width: fit-content;
-    background-color: rgba(256, 256, 256, 0.3);
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  background-color: rgba(256, 256, 256, 0.3);
 }
-.todoCreateForm{
-    padding: 10px;
+.todoCreateForm {
+  padding: 10px;
 }
-.todoinput{
-    background-color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 9px 5px 39px -16px rgba(0,0,0,0.75);
-    margin: 4px;
-    height: 32px;
-    padding: 12px;
-    color:mediumblue;
-    outline: none;
+.todoinput {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 9px 5px 39px -16px rgba(0, 0, 0, 0.75);
+  margin: 4px;
+  height: 32px;
+  padding: 12px;
+  color: mediumblue;
+  outline: none;
 }
-.botonCrear{
-    padding: 0 12px;
-    background-color: cornflowerblue;
-    color: whitesmoke;
-    border-radius: 5px;
-    border: none;
-    height: 32px;
+.botonCrear {
+  padding: 0 12px;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  height: 32px;
 }
-.contenedorTareas{
-    background-color: rgba(250, 250, 256, 0.4);
-    min-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;    
-    padding: 10px 0;
-    border-radius: 5px;
+.contenedorTareas {
+  background-color: rgba(250, 250, 256, 0.4);
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 5px;
 }

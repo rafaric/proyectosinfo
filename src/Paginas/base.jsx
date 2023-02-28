@@ -146,8 +146,23 @@ function Base(props) {
       </section>
       <section className="softSkills">
         <h2>Soft Skills</h2>
-        <div>
-          <h3>SoftSkills</h3>
+        <div className="skills-container">
+          <div className="skills-card">
+            <img src="images/team.svg" alt="" />
+            <span>Trabajo en equipo</span>
+          </div>
+          <div className="skills-card">
+            <img src="images/productivity.svg" alt="" />
+            <span>Productividad</span>
+          </div>
+          <div className="skills-card">
+            <img src="images/comunication.svg" alt="" />
+            <span>Comunicación</span>
+          </div>
+          <div className="skills-card">
+            <img src="images/responsibility.png" alt="" />
+            <span>Responsabilidad</span>
+          </div>
         </div>
       </section>
       <section className="otros-proyectos">

@@ -1,28 +1,36 @@
 .informacion-super-heroes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .informacion-super-heroe {
-    flex: 1;
-    overflow: auto;
-    border: solid 1px;
-    margin: 20px;
-    border-radius: 5px;
+  flex: 1;
+  overflow: auto;
+  border: solid 1px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 7px 8px 5px -3px rgba(0, 0, 0, 0.91);
 }
 
 .informacion-super-heroe img {
-    height: 200px;
-    width: 100%;
-    padding: 0.5rem;
+  height: 200px;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 .info {
-    padding: 0.8rem;
-    list-style: none;
+  padding: 0.8rem;
+  list-style: none;
 }
-.poderes{
-    padding-left: 4rem;
-    
+.poderes {
+  padding-left: 4rem;
+}
+@media screen and (max-width: 480px) {
+  .informacion-super-heroes {
+    flex-direction: column;
+    max-width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
