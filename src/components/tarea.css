@@ -1,53 +1,68 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 .tarea {
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 450px;
-    padding: 3px;
-    border-bottom: 1px solid black !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  width: 85%;
+  padding: 3px;
+  border-bottom: 1px solid black !important;
+  margin: 0 auto;
 }
-.tarea.completada{
-    text-decoration:line-through;
-    font-style:italic;
+.tarea-container {
+  display: flex;
+  width: 80vw;
+}
+.tarea.completada {
+  text-decoration: line-through;
+  font-style: italic;
 }
 
-button{
-    position: relative;
-    display: inline-block;
-    border: none;    
-    border-radius: 5px;
-    background-color: #6495ed;
-    padding: 4px;
-    color: whitesmoke;
-    font-size: 0.8rem;
+button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: #6495ed;
+  padding: 4px;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  height: 28px;
+  margin: auto 0;
 }
-button:last-child{
-    background-color: rgba(255, 0, 0, 0.514);
+button:last-child {
+  background-color: rgba(255, 0, 0, 0.514);
+}
+button:hover,
+.botonCrear:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 3px -1.5px rgba(0, 0, 0, 0.91);
+}
+button:active,
+.botonCrear:active {
+  box-shadow: 4px 4px 3px -1.5px rgba(0, 0, 0, 0.91) inset;
 }
 .buttoncontainer {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
+}
+.formupdate {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
 
+  border: 1px solid gray;
+  background-color: rgba(250, 250, 256, 0.5);
+  border-radius: 4px;
 }
-.formupdate{
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-    
-    border: 1px solid gray;
-    background-color: rgba(250, 250, 256, 0.5);
-    border-radius: 4px;
-}
-.tareaedit{
-    border: none;
-    border-radius: 3px;
-    margin: 0;
-    outline: none;
-    padding: 3px;
-    width: fit-content;
+.tareaedit {
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  outline: none;
+  padding: 3px;
+  width: 100%;
 }

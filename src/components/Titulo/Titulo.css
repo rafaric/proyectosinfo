@@ -1,13 +1,13 @@
-.titulo{
-    text-align: center;
-    padding-bottom: 3rem;
+.titulo {
+  text-align: center;
+  padding-top: 2rem;
 }
 .titulo-h1 {
-    font-size: 24px;
-    color: cornflowerblue;
+  font-size: 24px;
+  color: cornflowerblue;
 }
 
 .titulo-h2 {
-    font-size: 20px;
-    color: cornflowerblue;
+  font-size: 20px;
+  color: cornflowerblue;
 }

@@ -113,7 +113,7 @@
 .proyectos__card {
   width: 400px;
   position: relative;
-  background-color: #e1e7f5;
+  background-color: aliceblue;
   border-radius: 10px;
   height: 250px;
 }
@@ -307,13 +307,26 @@
   margin: 2rem 0;
   align-self: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .header {
     flex-direction: column;
     background-size: contain;
   }
+  .navbar-toggler {
+    margin-left: 8px;
+  }
+  .header .avatar {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .avatar {
+    align-self: center;
+  }
   .header .subheader > h1 {
     font-size: 3rem;
+  }
+  .desc {
+    height: 250px;
   }
   .header .bn39 {
     margin-top: 6rem;
@@ -328,7 +341,10 @@
     padding: 0.8rem 1.2rem;
     line-height: 2rem;
   }
-
+  .skills-container {
+    flex-direction: column;
+    justify-content: center;
+  }
   .otros-proyectos {
     width: 90vw;
     margin: 0 auto;
@@ -349,8 +365,6 @@
   }
   .proyectos__card-img {
     width: 90%;
-  }
-  .proyectos__card-tecno-img {
   }
 
   .educacion-container {

@@ -17,10 +17,9 @@ function Encriptador() {
         </a>
         <div className="contenedor-pagina-descripcion">
           <p>
-            Encriptador de texto realizado con HTML, CSS y Javascript. Realizado
-            en el curso de Allura Latam. Se siguió los patrones de diseño
-            propuestos por la catedra. Para visitar el sitio, haga clic en la
-            imagen.
+            Encriptador de texto realizado con HTML, CSS y Javascript en el
+            curso de Allura Latam. Se siguió los patrones de diseño propuestos
+            por la catedra. Para visitar el sitio, haga clic en la imagen.
           </p>
         </div>
       </div>

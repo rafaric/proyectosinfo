@@ -155,6 +155,14 @@ function Base(props) {
             <img src="images/productivity.svg" alt="" />
             <span>Productividad</span>
           </div>
+          <div className="skills-card">
+            <img src="images/comunication.svg" alt="" />
+            <span>Comunicación</span>
+          </div>
+          <div className="skills-card">
+            <img src="images/responsibility.png" alt="" />
+            <span>Responsabilidad</span>
+          </div>
         </div>
       </section>
       <section className="otros-proyectos">
