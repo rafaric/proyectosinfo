@@ -207,6 +207,20 @@ function Base(props) {
               <img src={rea} alt="react" className="tecno-img" />
             </div>
           </div>
+          <div className="proyectos__card">
+            <a href="https://rafaric.github.io/tecnoexpress/">
+              <img
+                className="proyectos__card-img"
+                src="images/e-commerce.png"
+                alt="e-commerce"
+                onMouseEnter={showTecno}
+              />
+            </a>
+            <div className="proyectos__card-tecno-img">
+              <img src={html5} alt="html5" className="tecno-img" />
+              <img src={ccs3} alt="ccs3" className="tecno-img" />
+            </div>
+          </div>
         </div>
       </section>
       <section className="educacion">
