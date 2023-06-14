@@ -9,15 +9,12 @@ import lin from "../img/icons/linkedin.png";
 
 function NavList() {
   return (
-    <Navbar expand="lg" className="sticky-top">
+    <Navbar expand="lg" className="sticky-top" id="nav">
       <div className="menu-container">
-        <LinkContainer to="/">
-          <Navbar.Brand>Mi Portfolio</Navbar.Brand>
-        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">
-            <LinkContainer to="/superheroes">
+            <LinkContainer to="/">
               <Nav.Link>Listado de SuperHeroes</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/productos">
@@ -26,9 +23,7 @@ function NavList() {
             <LinkContainer to="/todo">
               <Nav.Link>Todo</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/buscador">
-              <Nav.Link>Buscador de Peliculas</Nav.Link>
-            </LinkContainer>
+
             <LinkContainer to="/encriptador">
               <Nav.Link>Encriptador de texto</Nav.Link>
             </LinkContainer>

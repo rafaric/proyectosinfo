@@ -4,7 +4,12 @@
     padding-top: 1rem;
     border-radius: 5px;
     background-color: rgba(6, 202, 202, 0.829);
-    box-shadow: 17px 10px 13px -3px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 17px 10px 13px -3px rgba(0,0,0,0.5);
-    -moz-box-shadow: 17px 10px 13px -3px rgba(0,0,0,0.5);
+    box-shadow: 17px 10px 13px -3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 17px 10px 13px -3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 17px 10px 13px -3px rgba(0, 0, 0, 0.5);
+
+}
+
+.informacion-equipo:hover {
+    transform: scale(1.02)
 }

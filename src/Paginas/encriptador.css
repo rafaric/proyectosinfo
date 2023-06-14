@@ -2,29 +2,36 @@
   width: 50vw;
   height: 50vh;
 }
+
 .contenedor-pagina {
   display: flex;
-
-  margin: 3rem 1rem;
+  max-width: 1200px;
+  margin: 3rem auto;
 }
+
 .contenedor-pagina p {
   padding: 0 3rem;
   font-size: large;
+
 }
+
 .contenedor-pagina-descripcion {
   height: 50vh;
   display: flex;
   align-items: center;
   margin: auto 0;
 }
+
 @media screen and (max-width: 480px) {
   .contenedor-pagina {
     flex-direction: column;
   }
+
   .encriptador-imagen {
     width: 100%;
     height: 30vh;
   }
+
   .contenedor-pagina-descripcion {
     text-align: center;
   }

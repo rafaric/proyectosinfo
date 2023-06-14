@@ -44,91 +44,6 @@ function Base(props) {
         </div>
       </header>
 
-      <section className="tecnologias--section">
-        <h2 className="tecnologias--titulo">TECNOLOGÍAS</h2>
-        <div className="tecnologias">
-          <div
-            className="tecnologia"
-            data-tooltip-id="html"
-            data-tooltip-content="HTML5"
-          >
-            <img src={html5} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="ccs3"
-            data-tooltip-content="CCS3"
-          >
-            <img src={ccs3} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="Bootstrap"
-            data-tooltip-content="Bootstrap"
-          >
-            <img src={boot} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="Javascript"
-            data-tooltip-content="Javascript"
-          >
-            <img src={js} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="react"
-            data-tooltip-content="React"
-          >
-            <img src={rea} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="next"
-            data-tooltip-content="NextJs"
-          >
-            <img src={next} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="sql"
-            data-tooltip-content="MySql"
-          >
-            <img src={sql} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="post"
-            data-tooltip-content="Postgress"
-          >
-            <img src={post} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="python"
-            data-tooltip-content="Python"
-          >
-            <img src={python} alt="" className="tecno-img" />
-          </div>
-          <div
-            className="tecnologia"
-            data-tooltip-id="django"
-            data-tooltip-content="Django"
-          >
-            <img src={django} alt="" className="tecno-img" />
-          </div>
-        </div>
-        <Tooltip id="html" />
-        <Tooltip id="ccs3" />
-        <Tooltip id="Bootstrap" />
-        <Tooltip id="Javascript" />
-        <Tooltip id="react" />
-        <Tooltip id="next" />
-        <Tooltip id="sql" />
-        <Tooltip id="post" />
-        <Tooltip id="python" />
-        <Tooltip id="django" />
-      </section>
       <section className="about">
         <div className="about--container">
           <h2 className="about--titulo">Acerca de mí</h2>
@@ -222,6 +137,91 @@ function Base(props) {
             </div>
           </div>
         </div>
+      </section>
+      <section className="tecnologias--section">
+        <h2 className="tecnologias--titulo">TECNOLOGÍAS</h2>
+        <div className="tecnologias">
+          <div
+            className="tecnologia"
+            data-tooltip-id="html"
+            data-tooltip-content="HTML5"
+          >
+            <img src={html5} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="ccs3"
+            data-tooltip-content="CCS3"
+          >
+            <img src={ccs3} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="Bootstrap"
+            data-tooltip-content="Bootstrap"
+          >
+            <img src={boot} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="Javascript"
+            data-tooltip-content="Javascript"
+          >
+            <img src={js} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="react"
+            data-tooltip-content="React"
+          >
+            <img src={rea} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="next"
+            data-tooltip-content="NextJs"
+          >
+            <img src={next} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="sql"
+            data-tooltip-content="MySql"
+          >
+            <img src={sql} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="post"
+            data-tooltip-content="Postgress"
+          >
+            <img src={post} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="python"
+            data-tooltip-content="Python"
+          >
+            <img src={python} alt="" className="tecno-img" />
+          </div>
+          <div
+            className="tecnologia"
+            data-tooltip-id="django"
+            data-tooltip-content="Django"
+          >
+            <img src={django} alt="" className="tecno-img" />
+          </div>
+        </div>
+        <Tooltip id="html" />
+        <Tooltip id="ccs3" />
+        <Tooltip id="Bootstrap" />
+        <Tooltip id="Javascript" />
+        <Tooltip id="react" />
+        <Tooltip id="next" />
+        <Tooltip id="sql" />
+        <Tooltip id="post" />
+        <Tooltip id="python" />
+        <Tooltip id="django" />
       </section>
       <section className="educacion">
         <h2 className="text-center py-5">Cursos y certificados</h2>

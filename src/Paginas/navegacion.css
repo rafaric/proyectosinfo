@@ -6,6 +6,7 @@
   font-weight: 700 !important;
   font-size: 1.2rem !important;
 }
+
 .nav-link:hover {
   color: #5c698b !important;
   background-color: aliceblue;
@@ -19,25 +20,32 @@
   font-family: "big_john_probold";
   font-size: 1.6rem !;
 }
+
 .navbar-brand:hover {
   font-weight: bolder;
 }
-#root > div > nav {
+
+#nav {
   background-color: #e2eafc;
   color: #abc4ff;
+  padding: 1rem 4rem;
 }
+
 .navbar-expand-lg {
   display: flex;
   justify-content: space-between !important;
   align-items: center !important;
 }
+
 .menu-container {
   display: flex;
 }
+
 .menu-redes {
   padding-right: 20px;
   align-items: center;
 }
+
 .menu-redes ul {
   list-style: none;
   display: flex;
@@ -45,30 +53,38 @@
   align-items: center;
   margin-bottom: 0;
 }
+
 .redes {
   width: 40px;
   height: auto;
 }
+
 .redes-home {
   display: none;
 }
+
 .redes:hover,
 .redes-home:hover {
   opacity: 0.5;
   cursor: pointer;
-  transform: scale(1.2);
-  transition: transform 0.3s linear;
+  /* transform: scale(1.2);
+  transition: transform 0.3s linear; */
+  animation: animacion 2s normal ease-out;
 }
+
 @media screen and (max-width: 480px) {
   .navbar-brand {
     display: none;
   }
+
   .navbar-nav {
     padding-left: 1rem !important;
   }
+
   .navbar-toggler {
     height: 40px !important;
   }
+
   .navbar-collapse.collapse.show {
     display: block;
     position: absolute;
@@ -76,17 +92,63 @@
     left: 1px;
     background-color: #e2eafc;
   }
+
   .collapsing {
     height: 0 !important;
     overflow: visible !important;
     transition: none !important;
   }
+
   .menu-redes ul {
     gap: 2rem;
   }
+
   .redes-home {
     display: block;
     width: 40px;
     height: 40px;
+  }
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateY(0px);
+  }
+
+  10% {
+    transform: translateY(5px);
+  }
+
+  15% {
+    transform: translateY(12px);
+  }
+
+  30% {
+    transform: translateY(15px);
+  }
+
+  50% {
+    transform: translateY(18px);
+  }
+
+  60% {
+    transform: translateY(15px);
+  }
+
+  75% {
+    transform: translateY(5px);
+    ;
+  }
+
+  80% {
+    transform: translateY(0px);
+  }
+
+  90% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translate(0px);
   }
 }

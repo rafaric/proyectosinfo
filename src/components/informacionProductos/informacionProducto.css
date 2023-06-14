@@ -1,9 +1,13 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 180px;
     min-height: 150px;
     border: solid 1px;
     border-radius: 20px;
     margin: 20px;
+
 }
 
 .card img {
@@ -13,14 +17,25 @@
 }
 
 .card ul {
-    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
 
+    padding: 0 1rem;
+    height: 100%;
+    margin-bottom: 0;
 }
-.bold{
+
+.bold {
     font-weight: 600;
 }
+
 .card ul li {
     list-style: none;
     border-bottom: solid 1px;
     padding: 10px 0;
+    align-items: start;
+}
+
+ul li:last-child {
+    border-bottom: none;
 }
